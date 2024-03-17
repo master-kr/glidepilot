@@ -81,7 +81,7 @@ class Controls:
 
     self.params = Params()
     ignore = self.sensor_packets + ['testJoystick']
-    if False:
+    if True:
       ignore += ['driverCameraState', 'managerState', 'driverMonitoringState']
     self.sm = messaging.SubMaster(['deviceState', 'pandaStates', 'peripheralState', 'modelV2', 'liveCalibration',
                                    'driverMonitoringState', 'longitudinalPlan', 'lateralPlan', 'liveLocationKalman',
