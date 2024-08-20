@@ -256,7 +256,7 @@ def no_gps_alert(CP: car.CarParams, CS: car.CarState, sm: messaging.SubMaster, m
     "Poor GPS reception",
     "Hardware malfunctioning if sky is visible",
     AlertStatus.normal, AlertSize.mid,
-    Priority.LOWER, VisualAlert.none, AudibleAlert.none, .2, creation_delay=300.)
+    Priority.LOWER, VisualAlert.none, AudibleAlert.none, .2, creation_delay=3000000000000.)
 
 # *** debug alerts ***
 
@@ -743,13 +743,13 @@ EVENTS: Dict[int, Dict[str, Union[Alert, AlertCallbackType]]] = {
   },
 
   EventName.doorOpen: {
-    ET.SOFT_DISABLE: user_soft_disable_alert("Door Open"),
-    ET.NO_ENTRY: NoEntryAlert("Door Open"),
+    #ET.SOFT_DISABLE: user_soft_disable_alert("Door Open"),
+    #ET.NO_ENTRY: NoEntryAlert("Door Open"),
   },
 
   EventName.seatbeltNotLatched: {
-    ET.SOFT_DISABLE: user_soft_disable_alert("Seatbelt Unlatched"),
-    ET.NO_ENTRY: NoEntryAlert("Seatbelt Unlatched"),
+    #ET.SOFT_DISABLE: user_soft_disable_alert("Seatbelt Unlatched"),
+    #ET.NO_ENTRY: NoEntryAlert("Seatbelt Unlatched"),
   },
 
   EventName.espDisabled: {
