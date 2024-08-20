@@ -560,7 +560,7 @@ EVENTS: Dict[int, Dict[str, Union[Alert, AlertCallbackType]]] = {
 
   # Unused
   EventName.gpsMalfunction: {
-    ET.PERMANENT: NormalPermanentAlert(" Malfunction", "Likely Hardware Issue"),
+    ET.PERMANENT: NormalPermanentAlert("GPS Malfunction", "Likely Hardware Issue"),
   },
 
   EventName.locationdTemporaryError: {
